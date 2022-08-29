@@ -2,15 +2,16 @@ version: 2
 
 models:
   - name: dim_customers
-    description: Customer dimensions table
+    description: Tabela Dimensao Customer 
     columns:
       - name: customer_key
-        description: Primary key on the customers table
+        description: Chave primeria na customers tabela
         tests:
           - unique
           - not_null
                 
   - name: dim_parts
+    description: Chave de particionamento
     columns:
       - name: part_key
         tests:
@@ -18,22 +19,28 @@ models:
           - not_null
 
   - name: dim_suppliers
+    description : Tabela de suppliers
     columns:
       - name: supplier_key
+        description : Chave de identificaçãão do supplier
         tests:
           - unique
           - not_null
 
   - name: fct_order_items
+    description : Tabela Fato Order_items
     columns:
       - name: order_item_key
+        description : Chave order_item
         tests:
           - unique
           - not_null
                 
   - name: fct_orders
+    description : Tabela Fato Orders
     columns:
       - name: order_key
+        description : Chave orders
         tests:
           - unique
           - not_null

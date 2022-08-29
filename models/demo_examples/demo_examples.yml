@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: materialization_incremental
-    description: demo to show incremental model
+    description: demonstracao para mostrar um modelo incremental
     columns:
       - name: customer_key
         tests:
@@ -10,7 +10,7 @@ models:
           - not_null
 
   - name: use_variables
-    description: demo to show variables
+    description: demonstracao para mostrar variaveis 
     columns:
       - name: order_item_key
         tests:
